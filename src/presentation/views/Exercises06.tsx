@@ -1,7 +1,6 @@
-
 import { View, StyleSheet, Text } from 'react-native'
 
-export const FlexExcercises = () => {
+export const Exercises06 = () => {
   return (
     <View style={styles.container}>
         <View style={[styles.box, styles.redBox ]} />
@@ -15,17 +14,17 @@ export const FlexExcercises = () => {
  const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#b6b6b6',
-      flexDirection: 'column',
+      backgroundColor: '#b6b6b6',      
+      flexDirection: 'column-reverse',
       justifyContent: 'center',
-      alignItems: 'center'
+      alignContent: 'center',      
 
     },
     box: {
       width: 100,
       height: 100,
       borderWidth: 10,
-      borderColor: 'white'
+      borderColor: 'white',
     },
     redBox: {
       backgroundColor: '#ff5151',
@@ -34,6 +33,7 @@ export const FlexExcercises = () => {
     },
     greenBox: {      
       backgroundColor: '#51ff8b',
+      alignSelf: 'center' 
     },
     blueBox: {
       backgroundColor: '#5188ff',
